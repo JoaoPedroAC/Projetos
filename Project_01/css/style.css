@@ -1,291 +1,295 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box; /*quando formos usar o padding*/
-	font-family: 'Mont Serrat';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*quando formos usar o padding*/
+    font-family: 'Mont Serrat';
 }
 
-html, body{
-	height: 100%;
+html,
+body {
+    height: 100%;
 }
+
+
 /*para usar uma nova fonte externa*/
-@font-face{
-	src: url(../fonts/Montserrat-Regular.ttf);
-	font-family: "Mont Serrat";
+
+@font-face {
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-family: "Mont Serrat";
 }
 
-.clear{
-	clear: both;
+.clear {
+    clear: both;
 }
 
-.center{
-	max-width: 1280px;
-	width: 100%;
-	/*height: 100%;*/
-	margin: 0 auto;
-	padding: 0 2%;
+.center {
+    max-width: 1280px;
+    width: 100%;
+    /*height: 100%;*/
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
-.header{
-	width: 100%;
-	padding: 0 2%;
-	height: 60px;
-	background-color: #212343;
+.header {
+    width: 100%;
+    padding: 0 2%;
+    height: 60px;
+    background-color: #212343;
 }
 
-.header img{
-	margin: 15px;
+.header img {
+    margin: 15px;
 }
 
-.container-banner{
-	width: 100%;
-	padding: 0 2%;
-	height: 557px;
-	background-image: url('../images/header_bg.png');
-	background-size: cover;
-	background-position: center;
+.container-banner {
+    width: 100%;
+    padding: 0 2%;
+    height: 557px;
+    background-image: url('../images/header_bg.png');
+    background-size: cover;
+    background-position: center;
 }
+
 
 /*sem isso não vai aparecer o .form, por causa da altura que tem q ser aplicada no container e center para 
 executar a altura do .form*/
-.container-banner > .center{
-	height: 100%;
-/*text-align: right; vai precisar disso, se usar o display*/
+
+.container-banner>.center {
+    height: 100%;
+    /*text-align: right; vai precisar disso, se usar o display*/
 }
 
-.form{
-	padding: 10px;
-	width: 400px;
-	height: calc(100% + 30px); /*vai acrecentar + 30px pra baixo*/
-	float: right;/* ou display: inline-block; */
-	position: relative;
-	top: -15px;/*vai acrecentar mais + 15px pra cima(q eh metade dos 30 acima)*/
-	border: 8px solid rgba(120, 120, 120, 0.5);
-	background-color: white;
-/*serve para dxar transparente as coisas cm cores definidas por nos, 
+.form {
+    padding: 10px;
+    width: 400px;
+    height: calc(100% + 30px);
+    /*vai acrecentar + 30px pra baixo*/
+    float: right;
+    /* ou display: inline-block; */
+    position: relative;
+    top: -15px;
+    /*vai acrecentar mais + 15px pra cima(q eh metade dos 30 acima)*/
+    border: 8px solid rgba(120, 120, 120, 0.5);
+    background-color: white;
+    /*serve para dxar transparente as coisas cm cores definidas por nos, 
 background-origins faz o mesmo porem serve so pra imagem*/
-/*padding-box = vai afetar a area do padding da borda*/
-/*content-box = vai afetar o espaço entre a borda e o conteudo*/
-/*border-box = é o padrão de toda borda*/
-	background-clip: padding-box;
+    /*padding-box = vai afetar a area do padding da borda*/
+    /*content-box = vai afetar o espaço entre a borda e o conteudo*/
+    /*border-box = é o padrão de toda borda*/
+    background-clip: padding-box;
 }
 
-.form h2{
-	font-weight: normal;
-	color: #999;
-	font-size: 20px;
-	text-align: center;
+.form h2 {
+    font-weight: normal;
+    color: #999;
+    font-size: 20px;
+    text-align: center;
 }
 
-.input-container{
-	margin-top: 20px;
+.input-container {
+    margin-top: 20px;
 }
 
-.input-container span, .form p{
-	display: inline-block;
-	width: 100%;
-	color: #bbb;
-	font-size: 17px;
-	font-weight: bold;
+.input-container span,
+.form p {
+    display: inline-block;
+    width: 100%;
+    color: #bbb;
+    font-size: 17px;
+    font-weight: bold;
 }
 
-.form p{
-	margin: 20px 0; 
+.form p {
+    margin: 20px 0;
 }
 
-.input-container input[type=text]{
-	margin-top: 8px; 
-	width: 344px;
-	height: 55px;
-	border: 1px solid #ccc;
+.input-container input[type=text] {
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    border: 1px solid #ccc;
 }
 
-.form .submit{
-	text-align: center;
+.form .submit {
+    text-align: center;
 }
 
-.submit input[type=submit]{
-	width: 280px;
-	height: 56px;
-	background-color: #363A6D;
-	color: white;
-	font-size: 25px;
-	display: inline-block;
-	border-top: 0;
-	border-left: 0;
-	border-right: 0;
-	border-bottom: 5px solid #4A5097;
-	cursor: pointer;
+.submit input[type=submit] {
+    width: 280px;
+    height: 56px;
+    background-color: #363A6D;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 5px solid #4A5097;
+    cursor: pointer;
 }
 
-.submit input[type=submit]:hover{
-	background-color: #323665;
+.submit input[type=submit]:hover {
+    background-color: #323665;
 }
 
-.container-list{
-	padding: 30px;
-	margin-top: 100px;
-	float: left;
-	width: 519px;
-	height: 270px;
-	background-color: rgba(33, 35, 67, 0.7);
+.container-list {
+    padding: 30px;
+    margin-top: 100px;
+    float: left;
+    width: 519px;
+    height: 270px;
+    background-color: rgba(33, 35, 67, 0.7);
 }
 
-.container-list ul{
-	list-style-position: inside;
+.container-list ul {
+    list-style-position: inside;
 }
 
-.container-list ul li{
-	margin-top: 18px;
-	color: white;
+.container-list ul li {
+    margin-top: 18px;
+    color: white;
 }
 
-.container-2{
-	padding: 40px 2%;
-	background-color: rgb(227, 227, 227);
-	text-align: center;
+.container-2 {
+    padding: 40px 2%;
+    background-color: rgb(227, 227, 227);
+    text-align: center;
 }
 
-.container-2 h2{
-	font-weight: normal;
+.container-2 h2 {
+    font-weight: normal;
 }
 
-.container-2 p{
-	margin: 15px 0;
-	width: 100%;
-	max-width: 768px;
-	display: inline-block;
-	text-align: justify;
+.container-2 p {
+    margin: 15px 0;
+    width: 100%;
+    max-width: 768px;
+    display: inline-block;
+    text-align: justify;
 }
 
-.arrow{
-	position: relative;
-	top: 60px; /*sao os 40px+20px fazndo q fique metado pra fora e outra pra dentro */
-	left: 50%;
-	margin-left: -20px;
-	width: 40px;
-	height: 40px;
-	background-image: url('../images/arrow.png');
-/*a imagem é 64x64, mas ficou mto grande entao tive que diminiur p/ 40x40 e da esses 100%(w/h) 
+.arrow {
+    position: relative;
+    top: 60px;
+    /*sao os 40px+20px fazndo q fique metado pra fora e outra pra dentro */
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/arrow.png');
+    /*a imagem é 64x64, mas ficou mto grande entao tive que diminiur p/ 40x40 e da esses 100%(w/h) 
 p/ pegar a area toda do espaçamento*/
-	background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
-.section-1{
-	padding: 90px 2%;
+.section-1 {
+    padding: 90px 2%;
 }
 
-.section-1 h2{
-	text-align: center;
-	color: #462663;
-	font-weight: normal;
+.section-1 h2 {
+    text-align: center;
+    color: #462663;
+    font-weight: normal;
 }
 
-.container-section{
-	margin-top: 40px;
-	text-align: center;
+.container-section {
+    margin-top: 40px;
+    text-align: center;
 }
 
-.container-single{
-	float: left;
-	width: 33.33%;
-	padding: 30px; 
+.container-single {
+    float: left;
+    width: 33.33%;
+    padding: 30px;
 }
 
-.container-single p{
-	text-align: justify;
-	padding: 10px 10px;
+.container-single p {
+    text-align: justify;
+    padding: 10px 10px;
 }
 
-.container-single img{
-	width: 70px;
+.container-single img {
+    width: 70px;
 }
 
-.footer{
-	/*clear: both;*/
-	padding: 20px 2%;
-	border-top: 2px solid #888888;
-	text-align: center;
-	color: #888888;
+.footer {
+    /*clear: both;*/
+    padding: 20px 2%;
+    border-top: 2px solid #888888;
+    text-align: center;
+    color: #888888;
 }
 
-.footer{
-	margin-top: 8px;
+.footer {
+    margin-top: 8px;
 }
 
-@media screen and (max-width: 1024px){
-	.header{
-		width: 100%;
-		height: auto;
-		padding: 15px 0;
-		text-align: center;		
-	}
-
-	.header img{
-		margin: 0;
-	}
-
-	.container-list{
-		padding: 30px 0;
-		float: left;
-		width: 40%;
-		max-width: 500px;
-		height: auto;
-	}
-
-	.container-banner{
-		width: 100%;
-		padding: 40px 2%;
-		height: auto;
-		text-align: center;
-	}
-
-	.form{
-		max-width: 400px;
-		padding: 10px;
-		margin-top: 30px;
-		width: 60%;
-		height: 100%;
-		float: right;
-		top: 0;
-	}
-
-	.input-container input[type=text]{ 
-		width: 100%;
-		height: 55px;
-	}
-
-.submit input[type=submit]{
-		max-width: 280px;
-		width: 100%;
-		height: 56px;
-	}
+@media screen and (max-width: 1024px) {
+    .header {
+        width: 100%;
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .header img {
+        margin: 0;
+    }
+    .container-list {
+        padding: 30px 0;
+        float: left;
+        width: 40%;
+        max-width: 500px;
+        height: auto;
+    }
+    .container-banner {
+        width: 100%;
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+    .form {
+        max-width: 400px;
+        padding: 10px;
+        margin-top: 30px;
+        width: 60%;
+        height: 100%;
+        float: right;
+        top: 0;
+    }
+    .input-container input[type=text] {
+        width: 100%;
+        height: 55px;
+    }
+    .submit input[type=submit] {
+        max-width: 280px;
+        width: 100%;
+        height: 56px;
+    }
 }
 
-@media screen and (max-width: 768px){
-	.container-2 > h2, .container-2 > p{
-		padding-top: 40px;
-		padding: 0 4%;
-	}
-
-	.container-list{
-		margin-top: 0;
-		float: none;
-		display: inline-block;
-		width: 100%;
-	}
-
-	.form{
-		float: none;
-		display: inline-block;
-		width: 100%;
-	}
-
-	.container-single{
-		float: none;
-		display: inline-block;
-		width: 100%;
-		max-width: 600px
-		padding: 30px 0; 
-	}
+@media screen and (max-width: 768px) {
+    .container-2>h2,
+    .container-2>p {
+        padding-top: 40px;
+        padding: 0 4%;
+    }
+    .container-list {
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+    .form {
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+    .container-single {
+        float: none;
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        padding: 30px 0;
+    }
 }
