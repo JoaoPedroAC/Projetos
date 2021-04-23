@@ -1,101 +1,141 @@
-*{ margin: 0; padding: 0; box-sizing: border-box; }
-
-html, body{ height: 100%; }
-
-header{
-	background-color: #D6D6D6;
-	padding: 10px 2% 10px 2%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    background-color: #D6D6D6;
+    padding: 10px 2% 10px 2%;
+}
+
 
 /*divs para a logo*/
-.container{
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.logo-1{
-	width: 170px;
-	height: 90px;
-	float: left;
-	/*background-color: yellow;*/
-	background-image: url('../imagem/logo1.png');
-	background-size: 100% auto;
-	background-position: center;
-	background-repeat: no-repeat;
+.logo-1 {
+    width: 170px;
+    height: 90px;
+    float: left;
+    /*background-color: yellow;*/
+    background-image: url('../imagem/logo1.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.logo-2{
-	width: 170px;
-	height: 70px;
-	float: right;
-	/*background-color: blue;*/
-	background-image: url('../imagem/logo2.png');
-	background-size: 100% auto;
-	background-position: center;
-	background-repeat: no-repeat;
+.logo-2 {
+    width: 170px;
+    height: 70px;
+    float: right;
+    /*background-color: blue;*/
+    background-image: url('../imagem/logo2.png');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.clear{ clear: both; }
+.clear {
+    clear: both;
+}
+
+
 /*********/
 
+
 /* iniciando o background do formulario*/
-section.cover-form{
-	width: 100%;
-	padding: 0 2%;
+
+section.cover-form {
+    width: 100%;
+    padding: 0 2%;
 }
 
-.bg{
-	background-image: url("../imagem/bg-form.jpg");
-	height: 500px;
-	background-size: cover;
-	background-position: center;
+.bg {
+    background-image: url("../imagem/bg-form.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
 }
 
-.form-container{
-	width: 300px;
-	height: 110%;
-	background-color: rgba(234, 236, 239, 0.7);
-	float: right;
-	margin-right: 40px;
-	position: relative;
-	top: -5%;
+
+/* ************************* */
+
+
+/* iniciando formulario */
+
+.form-container {
+    width: 300px;
+    height: 110%;
+    background-color: rgba(234, 236, 239, 0.7);
+    float: right;
+    margin-right: 40px;
+    position: relative;
+    top: -5%;
 }
 
-.form-container h2{
-	padding: 30px 15px;
-	color: black;
-	font-weight: normal;
-	font-size: 18px;
-	background-color: rgb(234, 236, 239);
+.form-container h2 {
+    padding: 30px 15px;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+    background-color: rgb(234, 236, 239);
 }
 
-.form-container form{
-	margin-top: 8px;
-	padding: 15px;
+.form-container form {
+    margin-top: 8px;
+    padding: 15px;
 }
 
-.form-container form p{
-	font-size: 13px;
-	color: #525252;
+.form-container form p {
+    font-size: 13px;
+    color: #525252;
 }
 
-.form-container form input[type="text"]{
-	width: 100%;
-	height: 30px;
-	border: 1px solid #ccc;
+.form-container form input[type="text"] {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
 }
+
+.form-wraper:not(:first-child) {
+    margin-top: 40px;
+}
+
+.form-wraper:last-child {
+    margin-top: 20px;
+}
+
+.form-container form input[type=submit] {
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    cursor: pointer;
+    border: 0;
+}
+
+
 /**********/
 
-@media screen and (max-width: 510px){
-	header{
-		text-align: center;
-	}
-	
-	[class^="logo"]{
-		float: none;
-		display: inline-block;
-		margin-top: 10px;
-		/*padding: 0 90px;*/
-	}
+@media screen and (max-width: 510px) {
+    header {
+        text-align: center;
+    }
+    [class^="logo"] {
+        float: none;
+        display: inline-block;
+        margin-top: 10px;
+        /*padding: 0 90px;*/
+    }
 }
