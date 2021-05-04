@@ -40,16 +40,20 @@ header nav {
     float: right;
 }
 
-header nav ul {
+nav.mobile-menu {
+    display: none;
+}
+
+header nav.desktop-menu ul {
     list-style-type: none;
 }
 
-header nav li {
+header nav.desktop-menu li {
     float: left;
     margin: 0 20px;
 }
 
-header nav a {
+header nav.desktop-menu a {
     text-decoration: none;
     color: white;
 }
@@ -67,7 +71,7 @@ header .logo {
 .chamada1 {
     float: right;
     margin: 140px 150px;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .chamada1 h2 {
@@ -88,40 +92,46 @@ header .logo {
 
 /* iniciando sessao 1 */
 
-.sessao1 {
+section.sessao1 {
     width: 100%;
-    height: 100%;
-    padding: 20px 2%;
+    height: 400px;
+    padding: 0px 2%;
     background-color: #472562;
 }
 
-.sessao1 .container {
-    max-width: 800px;
+section.sessao1 .container {
+    max-width: 1000px;
 }
 
 .sessao-texto1 {
     float: left;
-    color: wheat;
+    color: rgb(255, 255, 255);
     width: 50%;
+    margin-top: 40px;
+    padding-left: 60px;
+    position: relative;
+    left: 55px;
 }
 
 .sessao-texto1 h2 {
+    font-size: 26px;
     font-weight: 300;
 }
 
 .sessao-texto1 p {
     font-size: 13px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .sessao-texto1 ul {
-    font-size: 13px;
+    font-size: 15px;
     list-style-position: inside;
 }
 
-.sesaao-texto1 ul li {
-    float: left;
+.sessao-texto1 ul li {
     width: 100%;
+    margin-top: 8px;
+    float: left;
 }
 
 .btn1-texto {
@@ -130,11 +140,12 @@ header .logo {
     height: 44px;
     color: white;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     /* para centralizar */
     line-height: 44px;
     border-radius: 30px;
+    float: left;
 }
 
 
@@ -146,11 +157,74 @@ header .logo {
 .sessao-device1 {
     float: left;
     width: 50%;
-    height: 300px;
+    height: 430px;
+    position: relative;
+    top: -30px;
     background-image: url('../imagem/device.png');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 
 
 /* **************** */
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        padding: 40px 2%;
+    }
+    nav.desktop-menu {
+        display: none;
+    }
+    nav.mobile-menu {
+        display: block;
+    }
+    .chamada1 {
+        text-align: center;
+        float: none;
+        margin: 100px 0;
+        max-width: none;
+        width: 100%;
+    }
+    .chamada1 h2 {
+        font-weight: 300;
+        font-size: 30px;
+        padding: 0 10px;
+    }
+    .chamada1 p {
+        font-size: 15px;
+        color: wheat;
+        margin-top: 10px;
+    }
+    .sessao1 {
+        padding: 40px 2%;
+        height: auto;
+        text-align: center;
+    }
+    .sessao-texto1 {
+        float: none;
+        position: static;
+        margin-top: 0;
+        width: 100%;
+        display: inline-block;
+        padding-left: 0px;
+    }
+    .sessao-texto1 ul {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .sessao-texto1 ul li {
+        float: none;
+        text-align: left;
+    }
+    .btn1-texto {
+        display: block;
+        margin: 20px auto 0 auto;
+        float: none;
+    }
+    .sessao-device1 {
+        display: none;
+    }
+}
