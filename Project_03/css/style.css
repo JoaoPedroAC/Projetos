@@ -125,7 +125,7 @@ header .logo {
 }
 
 
-/* *********************** */
+/* terminado chamada 1 */
 
 
 /* iniciando sessao 1 */
@@ -187,7 +187,7 @@ section.sessao1 .container {
 }
 
 
-/* ***************** */
+/* terminado sessao 1 */
 
 
 /* iniciando sessao-device1 */
@@ -233,11 +233,137 @@ section.sessao2 {
 
 .sessao2 img {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10px;
+    position: relative;
+    top: 70px;
 }
 
 
-/* ****************** */
+/* terminado sessao 2 */
+
+
+/* inicianado sessao 3 */
+
+.sessao3 {
+    width: 100%;
+}
+
+
+/* parte 1 */
+
+.part1 {
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background-color: #660266;
+    color: white;
+}
+
+.wraper-part1 {
+    max-width: 600px;
+    float: right;
+    padding-right: 30px;
+}
+
+.part1 h2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.part1 p {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+
+/* ************** */
+
+
+/* parte 2 */
+
+.part2 {
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+}
+
+.sobre-autor {
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.titulo-autor {
+    float: left;
+    width: 100%;
+}
+
+.wraper-titulo-autor {
+    /* width: calc(100% - 40px); */
+    float: left;
+}
+
+.titulo-autor h2 {
+    /* float: left; */
+    padding-right: 20px;
+    color: #232323;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.titulo-autor p {
+    padding-right: 15px;
+    color: #232323;
+    font-weight: 300;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.titulo-autor .foto-autor {
+    float: left;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -6px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.texto-autor {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.texto-autor p {
+    color: #232323;
+    font-size: 15px;
+}
+
+.slider-bullets {
+    float: left;
+    width: 100%;
+    margin-top: 12px;
+    padding-left: 30px;
+}
+
+.slider-bullets span {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    background-color: gray;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* *************** */
+
+
+/* terminado sessao 3*/
 
 
 /* media queri de 900px */
