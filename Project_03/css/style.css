@@ -262,7 +262,7 @@ section.sessao2 {
 .wraper-part1 {
     max-width: 600px;
     float: right;
-    padding-right: 30px;
+    padding: 0 30px;
 }
 
 .part1 h2 {
@@ -278,7 +278,7 @@ section.sessao2 {
 }
 
 
-/* ************** */
+/* fim da parte 1 */
 
 
 /* parte 2 */
@@ -360,10 +360,127 @@ section.sessao2 {
 }
 
 
-/* *************** */
+/* fim da parte 2 */
 
 
 /* terminado sessao 3*/
+
+
+/* iniciou a sessao 4 */
+
+section.sessao4 {
+    background-color: #472563;
+    padding: 100px 0;
+}
+
+
+/* continuando o .form e form */
+
+.form {
+    float: left;
+    width: 50%;
+    color: white;
+    padding-left: 10px;
+}
+
+.form h2 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.form p {
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 400px;
+    padding-right: 10px;
+}
+
+.form form {
+    margin-top: 15px;
+}
+
+.form form input[type=text] {
+    width: 90%;
+    max-width: 480px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200, 200, 200);
+    margin-top: 8px;
+}
+
+.form form textarea {
+    width: 90%;
+    max-width: 480px;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    height: 160px;
+    margin-top: 8px;
+}
+
+.form form input[type=submit] {
+    background-color: #FF703D;
+    width: 165px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 30px;
+    float: left;
+    border: 0;
+}
+
+
+/* parando o .form e form */
+
+
+/* continuando o map */
+
+.map-wraper {
+    width: 50%;
+    float: left;
+    color: white;
+    padding: 0 10px;
+}
+
+.map-wraper h2 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.map-wraper2 {
+    margin-top: 10px;
+    max-width: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.map-wraper3 {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    float: left;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 5px solid rgb(200, 200, 200);
+}
+
+
+/* parando o map */
+
+
+/* terminou a sessao 4 */
 
 
 /* media queri de 900px */
@@ -378,7 +495,7 @@ section.sessao2 {
 }
 
 
-/* *************** */
+/* fim da media queri de 900px */
 
 
 /* media queri de 830px */
@@ -404,7 +521,7 @@ section.sessao2 {
 }
 
 
-/* **************** */
+/* fim da media queri de 830px */
 
 
 /* media queri 768px */
@@ -461,7 +578,47 @@ section.sessao2 {
     .sessao2 h2 {
         padding-top: 10px;
     }
+    section.sessao4 .container {
+        text-align: center;
+    }
+    .form p {
+        float: none;
+        display: inline-block;
+    }
+    .form form input[type=submit] {
+        display: block;
+        margin: 40px auto 0 auto;
+        float: none;
+    }
+    .form {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .map-wraper {
+        width: 100%;
+    }
 }
 
 
-/* ************* */
+/* fim da media queri de 768px */
+
+
+/* media queri de 580px */
+
+@media screen and (max-width: 580px) {
+    .part1 {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .part2 {
+        width: 100%;
+        padding: 40px 0;
+    }
+    .sessao2 img {
+        top: 16px;
+        margin-top: 20px;
+    }
+}
+
+
+/* fim da media queri de 500px */
