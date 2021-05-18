@@ -526,7 +526,7 @@ section.sessao4 {
 
 /* media queri 768px */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     header {
         width: 100%;
         height: auto;
@@ -578,7 +578,7 @@ section.sessao4 {
     .sessao2 h2 {
         padding-top: 10px;
     }
-    section.sessao4 .container {
+    .sessao4 .container {
         text-align: center;
     }
     .form p {
@@ -587,7 +587,7 @@ section.sessao4 {
     }
     .form form input[type=submit] {
         display: block;
-        margin: 40px auto 0 auto;
+        margin: 40px auto;
         float: none;
     }
     .form {
@@ -600,15 +600,15 @@ section.sessao4 {
     }
     .map-wraper3 {
         margin-top: 10px;
+        margin-left: 107px;
         width: 80%;
         max-width: none;
         padding-top: 80%;
+        margin-right: 20px;
         position: relative;
         display: inline-block;
     }
     .map-wraper2 {
-        margin-top: 10px;
-        max-width: 480px;
         position: absolute;
         top: 0;
         left: 0;
