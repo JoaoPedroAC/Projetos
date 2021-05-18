@@ -595,7 +595,25 @@ section.sessao4 {
         padding-bottom: 10px;
     }
     .map-wraper {
+        float: none;
         width: 100%;
+    }
+    .map-wraper3 {
+        margin-top: 10px;
+        width: 80%;
+        max-width: none;
+        padding-top: 80%;
+        position: relative;
+        display: inline-block;
+    }
+    .map-wraper2 {
+        margin-top: 10px;
+        max-width: 480px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 100%;
     }
 }
 
