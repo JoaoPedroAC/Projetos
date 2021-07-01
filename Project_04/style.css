@@ -1,0 +1,126 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .container {
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+        /* AQUI ESTAMOS EDITANDO O CABEÇALHO DO SITE */
+        
+        header {
+            padding-bottom: 10px;
+        }
+        
+        header .logo img {
+            padding-top: 20px;
+            float: left;
+            width: 250px;
+        }
+        /* isso aki vai impedir q o conteudo fique de tras para frente */
+        
+        header nav {
+            float: right;
+            text-transform: uppercase;
+        }
+        /* ** */
+        
+        header ul {
+            padding-top: 25px;
+        }
+        
+        header li {
+            float: left;
+            padding-left: 50px;
+            list-style-type: none;
+        }
+        
+        header .lista a {
+            font: normal 15px;
+            color: black;
+            text-decoration: none;
+        }
+        /* FIM DA EDIÇÃO DO CABEÇALHO */
+        /* INICIANDO MOSAICO */
+        
+        section.mosaico .mosaico-box {
+            float: left;
+            width: calc(100% / 6);
+        }
+        
+        section.mosaico .mosaico-img {
+            /* background-image: url(''); */
+            background-color: rgb(194, 192, 192);
+            padding: 50% 0;
+            border: 3px solid white;
+        }
+        /* ******* */
+        /* RESUMO DOS SERVIÇOS EM CAIXA */
+        
+        section.servico>.container {}
+        
+        section.servico .servico-box {
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            align-items: center;
+            position: relative;
+            top: -30px;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+        
+        section.servico .servico-txt:nth-of-type(1) {
+            padding: calc(5%/2.5) 1%;
+            /* padding: 40px 15px; */
+            background-color: rgb(116, 144, 180);
+            background-image: url('imagens/icone_dente.png');
+            background-size: 18px 18px;
+            background-repeat: no-repeat;
+            background-position: center bottom 5px;
+        }
+        
+        section.servico .servico-txt:nth-of-type(2) {
+            padding: calc(5% - 15px) 2%;
+            /* padding: 60px 15px; */
+            background-color: rgb(148, 182, 226);
+        }
+        
+        section.servico .servico-txt:nth-of-type(3) {
+            padding: calc(5%/2.5) 1%;
+            /* padding: 40px 15px; */
+            background-color: rgb(116, 144, 180);
+            background-image: url('imagens/icone_dente.png');
+            background-size: 18px 18px;
+            background-repeat: no-repeat;
+            background-position: center bottom 5px;
+        }
+        
+        Section.servico .servico-txt h2 {
+            margin: 0 auto;
+            width: 80%;
+        }
+        
+        Section.servico .servico-txt p {
+            margin: 0 auto;
+            width: 80%;
+            font: normal 20px;
+            padding-bottom: 10px;
+        }
+        /* ********* */
