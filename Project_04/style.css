@@ -71,8 +71,6 @@
         /* ******* */
         /* RESUMO DOS SERVIÇOS EM CAIXA */
         
-        section.servico>.container {}
-        
         section.servico .servico-box {
             display: flex;
             max-width: 1000px;
@@ -114,7 +112,7 @@
         
         Section.servico .servico-txt h2 {
             margin: 0 auto;
-            width: 80%;
+            width: 70%;
         }
         
         Section.servico .servico-txt p {
@@ -124,3 +122,57 @@
             padding-bottom: 10px;
         }
         /* ********* */
+        /* EDITANDO O CONTEUDO DE PERFIL */
+        
+        .section.perfil-container>.container {
+            max-width: 100px;
+            width: 100%;
+            align-items: center;
+        }
+        
+        section.perfil-container .perfil-box {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            position: relative;
+            padding: 0 2%;
+        }
+        
+        section.perfil-img {
+            width: 150%;
+            height: 100%;
+        }
+        
+        section.perfil-container .perfil-txt {
+            padding-left: 5%;
+        }
+        
+        section.perfil-container .perfil-txt h2 {
+            padding: 10px 0;
+        }
+        
+        section.perfil-container .perfil-txt p {
+            font: normal 16px;
+            text-align: justify;
+            white-space: initial;
+        }
+        /* **************** */
+        
+        @media screen and (max-width :800px) {
+            section.perfil-container .perfil-box {
+                display: inline-block;
+            }
+            section.perfil-container img {
+                width: 50%;
+                height: 100%;
+                margin: 0 auto;
+            }
+            section.perfil-container .perfil-img {
+                padding-right: 0px;
+            }
+            section.perfil-container .perfil-txt {
+                width: 100%;
+                padding-left: 0px;
+            }
+        }
