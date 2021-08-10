@@ -42,4 +42,14 @@ window.onload = function() {
     inicar();
     var conteudo = '<p style="color:black; font-size:13px; padding:10px 0;">Meu endereçooooo!!!!!!!</p>'
     addMarker(-20.368797181023847, -40.305544842233765, '', conteudo, true);
+
+    // esse set é uma função interna do JS ele define q em tanto tempo sera executa alguma coisa(ele define em milisegundos)
+    setTimeout(function() {
+        // panTo tbm serv para definir o centro do mapa e setZoom para dar zoom
+        map.panTo({ lat: -23.550520, lng: -46.633309 });
+        map.setZoom(8);
+    }, 4000);
+
 }
+
+//OBS: tem muita coisa na documentação da API do google maps
