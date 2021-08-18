@@ -1,0 +1,331 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*quando formos usar o padding*/
+	font-family: 'Mont Serrat';
+}
+
+html, body{
+	height: 100%;
+}
+
+/* vai definir a fonte interna que estou usando */
+@font-face{
+	src: url(../fonts/Montserrat-Regular.ttf);
+	font-family: "Mont Serrat";
+}
+
+.clear{
+	clear: both;
+}
+
+/* vai predefinir o conteudo */
+.centro{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 2%;
+	max-width: 1280px;
+}
+
+/* vai definir o topo                                                                         */
+.topo{
+	width: 100%;
+	height: 60px;
+	background-color: #dbce23;
+}
+/*terminou de definir o topo                                                                   */
+
+/* vai estar tudo relacionado ao banner                                                        */
+.banner{
+	width: 100%;
+	height: 500px;
+	background-image: url(../imagem/banner-cortado.png);
+	background-size: cover;
+	background-position: center;
+	padding: 0 2%;
+}
+
+/* aqui vai ficar o quadro azul onde se escontram a lista*/
+.lista{
+	width: 520px;
+	height: 250px;
+	float: left;
+	background-color: rgba(95, 142, 176, 0.8);
+	padding: 30px;
+	margin-top: 100px;
+	margin-left: 10px;
+}
+
+.lista ul{
+	list-style-position: inside;
+}
+
+.lista li{
+	padding-top: 20px;
+	color: white;
+	font-size: 15px;
+}
+/*terminou o quadro azul*/
+
+/*vai criar um quadro branco com borda*/
+.formulario{
+	width: 394px;
+	height: calc(100% + 40px);/* vai dar mais 40px de espaço para baixo*/
+	background-color: white;
+	background-clip: padding-box;
+	float: right;
+	position: relative;
+	right: 50px;
+	bottom: 20px;
+	border: 9px solid rgba(95, 142, 176, 0.4);
+}
+/*terminou o quadro branco com borda*/
+
+.texto{
+	padding: 20px 15px;
+	font-size: 25px;
+}
+
+.texto input[type=text]{
+	border: 0;
+	background-color: rgb(95, 142, 176);
+	margin-top: 8px; 
+	width: 340px;
+	height: 25px;
+	padding-left: 5px;
+}
+
+.texto > h2{
+	color: rgb(95, 142, 176);
+	font-weight: normal;
+}
+
+.aviso{
+	padding: 20px 15px;
+	color: rgb(76, 113, 140);
+	font-size: 18px;
+}
+
+/*sem isso nao ficará no centro o botão*/
+.formulario .botao{
+	text-align: center;
+}
+
+.botao input[type=submit]{
+	margin-top: 20px;
+	display: inline-block;
+	width: 165px;
+	height: 52px;
+	background-color: rgb(0, 166, 2);
+	border:0;
+	border-bottom: 8px solid rgb(0, 143, 2);
+	cursor: pointer;
+/*A partir daqui é edição do texto do botão*/
+	color: white;
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+
+.botao input[type=submit]:hover{
+	background-color: rgb(0, 161, 2);
+}
+
+/*terminou de usar a área do banner                                                             */
+
+/*Inicio do paragrafo                                                                           */
+.paragrafo{
+	padding: 30px;
+	text-align: center;
+	background-color: rgba(95, 142, 176, 0.7);
+}
+
+.paragrafo h2{
+	font-weight: bolder; 
+}
+
+.paragrafo p{
+	margin: 15px auto;
+	width: 100%;
+	/*max-width: 900px;*/
+	/*padding-left: 25%;*/
+	text-align: justify;
+}
+
+.imagem{
+	padding-top: 20px;
+	position: relative;
+	top: 50px;
+	background-image: url(../imagem/divisa.png);
+	background-size: cover;
+	width: 65px;
+	height:65px;
+	margin-top: 40px;
+	margin: 0 auto;
+}
+/*Temrinou o Paragrafo                                                                         */
+
+/*Inicio do mini-texto                                                                         */
+.mini-texto{
+	padding: 90px 2%;
+}
+
+.mini-texto h2{
+	text-align: center;
+	color: rgb(95, 142, 176);
+	font-weight: normal;
+}
+
+.simples-box{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.simples-texto{
+	float: left;
+	width: 33.33%;
+	padding: 30px; 
+}
+
+.simples-texto p{
+	text-align: justify;
+	padding: 10px 10px;
+}
+
+.simples-texto img[src="imagem/icon-musc.png"]{
+	width: 80px;
+	padding-top: -50px;
+	padding-bottom: 19px;
+}
+
+.simples-texto img[src="imagem/icon-espad.png"]{
+	width: 80px;
+	padding-top: 25px;
+	/*padding-bottom: 20px; */
+}
+
+/*Terminou o mini-texto                                                                        */
+
+/*Iniciou o rodape                                                                             */
+.rodape{
+	width: 100%;
+	border-top: 3px solid rgb(63, 95, 117);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.rodape p{
+	font-size: 20px;
+}
+/*Terminou o rodape                                                                            */
+
+@media screen and (max-width: 1024px){
+
+	.topo{
+		width: 100%;	
+		height: auto;
+		text-align: center;
+	}
+
+	.banner{
+		width: 100%;
+		padding: 15px 2%;
+		height: auto;
+
+	}
+
+	.lista{
+		width: 40%;
+		max-width: 260px;
+		padding: 10px 10px; 
+		font-size: 16px;
+		float: left;
+	}
+
+	.formulario{
+		float: right;
+		width: 60%;
+		max-width: 300px;
+		height: 100%;
+		right: 0;
+		top: 0;
+		padding-bottom: 10px;
+
+	}
+
+	.texto{
+		padding: 10px 15px;
+		font-size: 18px;
+	}
+
+	.aviso{
+		padding: 10px 15px;
+		font-size: 15px
+	}
+
+	.texto input[type=text]{
+		width: 100%;
+	}	
+
+	.simplificado p{
+		width: 250px;
+		margin-left: 5%;
+	}
+	.simplificado img[src="imagem/icon-run.png"]{
+		left: 100px;
+	}
+
+	.simplificado img[src="imagem/icon-musc.png"]{
+		left: 100px;
+	}
+
+	.simplificado img[src="imagem/icon-espad.png"]{
+		left: 100px;
+	}
+
+	.paragrafo h2{
+		padding-left: 10%;
+	}
+
+	.paragrafo p{
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	.paragrafo > h2, .paragrafo > p{
+		padding-top: 40px;
+		padding: 0 4%;
+	}
+
+	.lista ul{
+		padding-left: 15%;
+		padding-right: 10%;
+	}
+
+	.lista{
+		float: none;
+		display: block;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.formulario{
+		float: none;
+		display: block;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.simples-texto{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 600px
+		padding: 30px 0; 
+	}
+}
