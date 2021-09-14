@@ -248,6 +248,23 @@ footer a {
 
 /* ****** */
 
+
+/* MW 1000px */
+
+div .buton a {
+    width: 100%;
+    /* sem isso o btão vai fazer nada, terão que clicar bem em cima do nome */
+    padding: 5% 15%;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* fim mw 1000px */
+
+
+/* MW 900px */
+
 @media screen and (max-width: 900px) {
     div.single-part:nth-child(1) {
         width: 30%;
@@ -263,3 +280,6 @@ footer a {
         padding: 3% 0 0 0%;
     }
 }
+
+
+/* fim MW 900px */
