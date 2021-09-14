@@ -251,12 +251,11 @@ footer a {
 
 /* MW 1000px */
 
-div .buton a {
-    width: 100%;
-    /* sem isso o btão vai fazer nada, terão que clicar bem em cima do nome */
-    padding: 5% 15%;
-    text-decoration: none;
-    color: white;
+@media screen and (max-width:1150px) {
+    div .buton a {
+        width: 100%;
+        padding: 5% 15%;
+    }
 }
 
 
