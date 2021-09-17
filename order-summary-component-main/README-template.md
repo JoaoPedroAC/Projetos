@@ -92,7 +92,7 @@ I will looking for best forms of to make responsive the design and more professi
 ## Author
 
 - Author - João Pedro
-- Frontend Mentor - [@JoaoPedroAC](www.frontendmentor.io/profile/JoaoPedroAC)
+- Frontend Mentor - [@JoaoPedroAC](https://www.frontendmentor.io/profile/JoaoPedroAC)
 
 ## Acknowledgments
 I congratulation the people that thinked in make this project
