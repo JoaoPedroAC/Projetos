@@ -40,7 +40,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
-- Solution URL: [My Solution](https://github.com/JoaoPedroAC/Projetos/edit/main/order-summary-component-main/)
+- Solution URL: [My Solution](https://joaopedroac.github.io/Projetos/order-summary-component-main/index.html)
 
 ## My process
 When I looked first time, thinked, its is so much easy, but dont were, maked a lot of time that I don't used HTML and CSS and accepted this project for test me, and frustraded me, but with percistence and dedication, finished with much pride, I remembered a lot of things and I ran behide more information that I don't knew for finally finished the amazing project. 
