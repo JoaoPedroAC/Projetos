@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="CSS/style.css">
+
     <title>Frontend Mentor | Componente Visual</title>
 
 </head>
@@ -22,7 +23,6 @@
                     <h4>
                         Shift the overall look and feel by adding these wonderful touches to furniture in your home
                     </h4>
-
                 </div>
                 <!-- grid-content -->
                 <div class="content1">
@@ -44,7 +44,17 @@
                 <!-- content2 -->
 
                 <div class="content3">
-                    <img src="images/icon-share.svg" alt="Share" title="Share">
+                    <div class="PopOver arrow_Down " id="ET">
+                        <div class="PopOver_Content">
+                            <span>SHARE</span>
+                            <a href=""><img src="images/icon-facebook.svg" alt=""></a>
+                            <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
+                            <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+                        </div>
+                        <!-- PopOver_Content -->
+                    </div>
+                    <!-- PopOver -->
+                    <img src="images/icon-share.svg" alt="Share" title="Share" onclick="share()">
                 </div>
                 <!-- content3 -->
             </div>
@@ -54,12 +64,19 @@
 
 
 
+    <script src="JavaScript/script.js"></script>
+    <script src="https://raw.githubusercontent.com/popoverjs/popoverjs/master/dist/popover.min.js">
+        $('#ET').fu_popover({
+            content: 'Hello !',
+            placement: 'top',
+            title: 'Alert'
+        });
+        $("#ET").fu_popover("hide");
+        $("#ET").fu_popover("show");
+    </script>
 </body>
 
 </html>
-<!-- texto -->
-<!--  Shift the overall look and feel by adding these wonderful touches to furniture in your home Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel
-    complete. Michelle Appleton 28 Jun 2020 Share -->
 
 <!-- <footer>
         <div class="attribution">
