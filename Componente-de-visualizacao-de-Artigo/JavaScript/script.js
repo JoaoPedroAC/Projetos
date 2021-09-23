@@ -1,19 +1,9 @@
-const share = () => {
-        // abrir
-        let pop = document.querySelector('#ET')
-        if (pop) {
-            pop.classList.add('show')
-        } else {}
-    }
-    // fechar
-const dissapear = () => {
+const share = (pop) => {
+    // abrir
+    pop = document.querySelector('#ET')
+    pop.classList.toggle('show')
 
-    console.log(pop)
-    if (pop != null) {
-        console.log('fechou')
-
-    }
 }
-document.addEventListener('click', dissapear)
 
-console.log(document)
+// no final das contas utilizei o toggle, ele add ou remove uma classe
+// tentei usar .add e .remove, mas não funcionava de jeito nenhum
