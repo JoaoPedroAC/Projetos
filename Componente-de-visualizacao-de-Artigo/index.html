@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href=" CSS/style.css ">
 
     <title>Frontend Mentor | Componente Visual</title>
 
@@ -32,7 +32,7 @@
 
                 <div class="content2">
                     <div class="img-avatar">
-                        <img src="images/avatar-michelle.jpg" alt="Michele">
+                        <img src="images/avatar-michelle.jpg " alt="Michele">
                     </div>
                     <!-- img-avatar -->
                     <div class="author">
@@ -44,17 +44,23 @@
                 <!-- content2 -->
 
                 <div class="content3">
-                    <div class="PopOver arrow_Down " id="ET">
-                        <div class="PopOver_Content">
-                            <span>SHARE</span>
-                            <a href=""><img src="images/icon-facebook.svg" alt=""></a>
-                            <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
-                            <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+                    <div class="PopOver arrow_Down" id="ET">
+                        <div class="PopOver_Content ">
+                            <div class="espaco-share" style="display: inline-block;">
+                                <span>SHARE</span>
+                            </div>
+                            <!-- espaco-share -->
+                            <div class="espaco-imgs" style="display: inline-block;">
+                                <a href=" "><img src="images/icon-facebook.svg" alt=""></a>
+                                <a href=" "><img src="images/icon-pinterest.svg" alt=""></a>
+                                <a href=" "><img src="images/icon-twitter.svg" alt=""></a>
+                            </div>
+                            <!-- espaco-imgs -->
                         </div>
                         <!-- PopOver_Content -->
                     </div>
                     <!-- PopOver -->
-                    <img src="images/icon-share.svg" alt="Share" title="Share" onclick="share()">
+                    <img src="images/icon-share.svg " alt="Share " title="Share " onclick="share() ">
                 </div>
                 <!-- content3 -->
             </div>
@@ -62,18 +68,7 @@
         </section>
     </main>
 
-
-
     <script src="JavaScript/script.js"></script>
-    <script src="https://raw.githubusercontent.com/popoverjs/popoverjs/master/dist/popover.min.js">
-        $('#ET').fu_popover({
-            content: 'Hello !',
-            placement: 'top',
-            title: 'Alert'
-        });
-        $("#ET").fu_popover("hide");
-        $("#ET").fu_popover("show");
-    </script>
 </body>
 
 </html>

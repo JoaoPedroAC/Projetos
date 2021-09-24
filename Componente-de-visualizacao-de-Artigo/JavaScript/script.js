@@ -1,8 +1,6 @@
-const share = (pop) => {
+const share = () => {
     // abrir
-    pop = document.querySelector('#ET')
-    pop.classList.toggle('show')
-
+    document.querySelector('#ET').classList.toggle('show')
 }
 
 // no final das contas utilizei o toggle, ele add ou remove uma classe
