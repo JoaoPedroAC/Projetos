@@ -60,6 +60,7 @@ body {
     border-radius: 5px;
     background-color: rgb(241, 236, 236);
     border-bottom: 5px solid rgb(170, 170, 167);
+    cursor: pointer;
 }
 
 .area>button:nth-child(1) {
@@ -136,5 +137,6 @@ body {
     }
     .titulo {
         margin: 10px auto 0 auto;
+        background-color: rgb(223, 219, 219);
     }
 }
