@@ -12,3 +12,8 @@ Tirei a ideia desse projeto de um pdf que li sobre JavaScript onde ensina sobre 
  
   ### CADASTRANDO O E-MAIL
   ![Email](https://user-images.githubusercontent.com/78094903/135627449-0b869a23-dbfa-4718-9623-2214515bc585.jpeg)
+  
+  ### CADASTRADO
+  ![Cadastrado](https://user-images.githubusercontent.com/78094903/135629483-ee9254f7-3ad2-449d-a781-117cf3f3dfbe.jpeg)
+  
+ [Clique em mim, para acessar a página](https://joaopedroac.github.io/Projetos/Cadastro/index.html)
