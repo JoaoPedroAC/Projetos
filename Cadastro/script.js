@@ -48,7 +48,7 @@ const cadastrarBotao = () => {
     };
     cadastrar.style.backgroundColor = "rgb(223, 219, 219)";
     // sem isso ele vai escrever uma vez e vai apagar
-    reg += `ID do usuário: ${numero++} \n`;
+    reg = `ID do usuário: ${numero++} \n`;
     reg += `Nome do usuário: ${n} \n`;
     reg += `E-mail do usuário: ${e} \n`;
     texto.innerHTML = reg;
