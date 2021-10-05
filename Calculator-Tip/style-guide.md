@@ -15,11 +15,11 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- Very dark cyan: hsl(183, 100%, 15%)
-- Dark grayish cyan: hsl(186, 14%, 43%)
-- Dark grayish cyan: hsl(184, 14%, 56%)
-- Light grayish cyan: hsl(185, 41%, 84%)
-- Light grayish cyan: hsl(189, 41%, 97%)
+- Very dark cyan: hsl(183, 100%, 15%) - para os botões e tbm splitter
+- Dark grayish cyan: hsl(186, 14%, 43%) - cor das fontes
+- Dark grayish cyan: hsl(184, 14%, 56%) - sei lá
+- Light grayish cyan: hsl(185, 41%, 84%) - main
+- Light grayish cyan: hsl(189, 41%, 97%) - sei la
 - White: hsl(0, 0%, 100%)
 
 ## Typography
