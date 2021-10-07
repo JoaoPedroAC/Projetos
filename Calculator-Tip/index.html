@@ -23,29 +23,29 @@
                         <label for="bill">Bill</label>
                         <br>
                         <img src="images/icon-dollar.svg" alt="">
-                        <input type="number" name="bill" id="bill" required>
+                        <input type="text" name="bill" id="bill">
                     </div>
                     <!-- bill -->
 
                     <div class="botao">
-                        <label for="botao">elect Tip %</label>
+                        <label for="botao"></label>elect Tip %</label>
                         <div class="b1">
-                            <button><p>5%</p></button>
-                            <button><p>10%</p></button>
-                            <button><p>15%</p></button>
+                            <button type="button" id="cinco" onclick="Cinco()">5%</button>
+                            <button type="button">10%</button>
+                            <button type="button">15%</button>
                         </div>
                         <!-- b1 -->
                         <div class="b2">
-                            <button><p>25%</p></button>
-                            <button><p>50%</p></button>
-                            <input type="number" name="tip" placeholder=" Custom  " id="botao">
+                            <button type="button">25%</button>
+                            <button type="button">50%</button>
+                            <input type="number" name="tip" placeholder=" Custom " id="botao">
                         </div>
                         <!-- b2 -->
                     </div>
                     <!-- botao -->
                     <div class="pessoa ">
                         <label for="pessoas ">Number of People</label>
-                        <span class="zero" style="color:red;display:inline;padding-left: 10px;">Can't be zero</span>
+                        <span class="zero" style="color:red;display:none;padding-left: 20px; font-size: smaller;">Can't be zero</span>
                         <br>
                         <img src="images/icon-person.svg " alt=" ">
                         <input type="number " name="pessoas " id="pessoas ">
@@ -56,7 +56,21 @@
             <!-- mulario -->
             <div class=" B-box ">
                 <div class="blue">
-
+                    <div class="tipAmount">
+                        <p>Tip Amoun <br></p>
+                        <div id="tipCaunt"></div>
+                    </div>
+                    <!-- tipAmount -->
+                    <br>
+                    <div class="totalPerson">
+                        <p>Total<br></p>
+                        <div id="totalCaunt"></div>
+                    </div>
+                    <!-- totalPerson -->
+                    <div id="reset">
+                        <button class="r" onclick="Reset()">RESET</button>
+                    </div>
+                    <!-- reset -->
                 </div>
                 <!-- blue -->
             </div>
