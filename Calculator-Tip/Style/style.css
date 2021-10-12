@@ -109,10 +109,9 @@ main {
     flex-direction: column;
 }
 
-
-/* .botao>label {
+.botao>label {
     color: hsl(186, 14%, 43%);
-} */
+}
 
 .botao>.b1,
 .botao>.b2 {
