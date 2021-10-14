@@ -10,12 +10,9 @@ const person = document.getElementById('pessoas');
 const tipCaunt = document.querySelector('#tipCaunt');
 const totalCaunt = document.querySelector('#totalCaunt');
 
-
 let conta;
 let pessoas;
 let custumatizar;
-
-// OBS = result2 está colculando errado, quando só number ele retorna errado o resultado e quando flutuado ele retorna NaN
 
 // 5%
 function cincoPorcento() {
@@ -24,8 +21,9 @@ function cincoPorcento() {
     cinco.style.backgroundColor = 'rgb(100, 202, 168)';
 
     // vai fazer  o calculo
-    conta = bill.value;
-    pessoas = person.value;
+    // sem o Number vai dar uma série de erros
+    conta = Number(bill.value);
+    pessoas = Number(person.value);
     // tip amount
     let result1 = conta * 0.05 / pessoas;
     tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
@@ -41,11 +39,18 @@ function dezPorcento() {
     dez.style.backgroundColor = 'rgb(100, 202, 168)';
 
     // vai fazer  o calculo
-    conta = bill.value;
-    pessoas = person.value;
-    let result1 = parseFloat(conta * 0.1 / pessoas);
-    tipCaunt.innerHTML = result1.toFixed(2);
+    // sem o Number vai dar uma série de erros
+    conta = Number(bill.value);
+    pessoas = Number(person.value);
+    // tip amount
+    let result1 = conta * 0.1 / pessoas;
+    tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
+    // total
+    let result2 = (result1 + conta) / pessoas;
+    totalCaunt.innerHTML = parseFloat(result2).toFixed(2);
+
 };
+
 // 15%
 function quinzePorcento() {
     // vai setar as cores ao clicar e ao sair de cima
@@ -53,10 +58,17 @@ function quinzePorcento() {
     quinze.style.backgroundColor = 'rgb(100, 202, 168)';
 
     // vai fazer  o calculo
-    conta = bill.value;
-    pessoas = person.value;
-    let result1 = parseFloat(conta * 0.15 / pessoas);
-    tipCaunt.innerHTML = result1.toFixed(2);
+    // sem o Number vai dar uma série de erros
+    conta = Number(bill.value);
+    pessoas = Number(person.value);
+    // tip amount
+    let result1 = conta * 0.15 / pessoas;
+    tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
+    // total
+    // total
+    let result2 = (result1 + conta) / pessoas;
+    totalCaunt.innerHTML = parseFloat(result2).toFixed(2);
+
 };
 // 25%
 function vinteCincoPorcento() {
@@ -65,10 +77,15 @@ function vinteCincoPorcento() {
     vinteCinco.style.backgroundColor = 'rgb(100, 202, 168)';
 
     // vai fazer  o calculo
-    conta = bill.value;
-    pessoas = person.value;
-    let result1 = parseFloat(conta * 0.25 / pessoas);
-    tipCaunt.innerHTML = result1.toFixed(2);
+    // sem o Number vai dar uma série de erros
+    conta = Number(bill.value);
+    pessoas = Number(person.value);
+    // tip amount
+    let result1 = conta * 0.25 / pessoas;
+    tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
+    // total
+    let result2 = (result1 + conta) / pessoas;
+    totalCaunt.innerHTML = parseFloat(result2).toFixed(2);
 };
 // 50%
 function cinquentaPorcento() {
@@ -77,10 +94,15 @@ function cinquentaPorcento() {
     cinquenta.style.backgroundColor = 'rgb(100, 202, 168)';
 
     // vai fazer  o calculo
-    conta = bill.value;
-    pessoas = person.value;
-    let result1 = parseFloat(conta * 0.15 / pessoas);
-    tipCaunt.innerHTML = result1.toFixed(2);
+    // sem o Number vai dar uma série de erros
+    conta = Number(bill.value);
+    pessoas = Number(person.value);
+    // tip amount
+    let result1 = conta * 0.5 / pessoas;
+    tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
+    // total
+    let result2 = (result1 + conta) / pessoas;
+    totalCaunt.innerHTML = parseFloat(result2).toFixed(2);
 };
 // Numero costumatizado
 function custumerPorcent() {
@@ -89,14 +111,20 @@ function custumerPorcent() {
     custom.style.backgroundColor = 'rgb(100, 202, 168)';
 
     // vai fazer  o calculo
-    custumatizar = custom.value;
-    conta = bill.value;
-    pessoas = person.value;
-    let result1 = parseFloat((conta * (custumatizar / 100)) / pessoas);
-    tipCaunt.innerHTML = result1.toFixed(2);
+    // sem o Number vai dar uma série de erros
+    custumatizar = Number(custom.value) / 100;
+    conta = Number(bill.value);
+    pessoas = Number(person.value);
+    // tip amount
+    let result1 = conta * custumatizar / pessoas;
+    tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
+    // total
+    let result2 = (result1 + conta) / pessoas;
+    totalCaunt.innerHTML = parseFloat(result2).toFixed(2);
 };
 // vai resetar tudo
 function Reset() {
-    location.reload()
+    // esse location retorna sua localização atual no documento + o seu método reload(), que fará a página voltar a sua "posição" padrão.
+    document.location.reload()
 
 }
