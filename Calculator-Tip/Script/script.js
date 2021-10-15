@@ -24,6 +24,11 @@ function cincoPorcento() {
     // sem o Number vai dar uma série de erros
     conta = Number(bill.value);
     pessoas = Number(person.value);
+
+    // vai fazer com que os botoões não funcionem caso os inputs não tenha nada
+    if (conta == false || pessoas == false) {
+        return;
+    }
     // tip amount
     let result1 = conta * 0.05 / pessoas;
     tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
@@ -42,6 +47,9 @@ function dezPorcento() {
     // sem o Number vai dar uma série de erros
     conta = Number(bill.value);
     pessoas = Number(person.value);
+    if (conta == false || pessoas == false) {
+        return;
+    }
     // tip amount
     let result1 = conta * 0.1 / pessoas;
     tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
@@ -50,7 +58,6 @@ function dezPorcento() {
     totalCaunt.innerHTML = parseFloat(result2).toFixed(2);
 
 };
-
 // 15%
 function quinzePorcento() {
     // vai setar as cores ao clicar e ao sair de cima
@@ -61,6 +68,9 @@ function quinzePorcento() {
     // sem o Number vai dar uma série de erros
     conta = Number(bill.value);
     pessoas = Number(person.value);
+    if (conta == false || pessoas == false) {
+        return;
+    }
     // tip amount
     let result1 = conta * 0.15 / pessoas;
     tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
@@ -80,6 +90,9 @@ function vinteCincoPorcento() {
     // sem o Number vai dar uma série de erros
     conta = Number(bill.value);
     pessoas = Number(person.value);
+    if (conta == false || pessoas == false) {
+        return;
+    }
     // tip amount
     let result1 = conta * 0.25 / pessoas;
     tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
@@ -97,6 +110,9 @@ function cinquentaPorcento() {
     // sem o Number vai dar uma série de erros
     conta = Number(bill.value);
     pessoas = Number(person.value);
+    if (conta == false || pessoas == false) {
+        return;
+    }
     // tip amount
     let result1 = conta * 0.5 / pessoas;
     tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
@@ -115,6 +131,9 @@ function custumerPorcent() {
     custumatizar = Number(custom.value) / 100;
     conta = Number(bill.value);
     pessoas = Number(person.value);
+    if (conta == false || pessoas == false || custumatizar == false) {
+        return;
+    }
     // tip amount
     let result1 = conta * custumatizar / pessoas;
     tipCaunt.innerHTML = parseFloat(result1).toFixed(2);
