@@ -9,7 +9,7 @@ const resetar = document.getElementsByClassName("r");
 const person = document.getElementById('pessoas');
 const tipCaunt = document.querySelector('#tipCaunt');
 const totalCaunt = document.querySelector('#totalCaunt');
-
+const deuRuim = document.querySelector('.zero');
 let conta;
 let pessoas;
 let custumatizar;
@@ -24,10 +24,12 @@ function cincoPorcento() {
     // sem o Number vai dar uma série de erros
     conta = Number(bill.value);
     pessoas = Number(person.value);
-
-    // vai fazer com que os botoões não funcionem caso os inputs não tenha nada
-    if (conta == false || pessoas == false) {
-        return;
+    // vai fazer com que os botões não funcionem caso os inputs não tenha nada
+    if (conta === 0 || pessoas === 0) {
+        deuRuim.classList.add('one');
+        return; 
+    }else{
+        deuRuim.classList.remove('one');
     }
     // tip amount
     let result1 = conta * 0.05 / pessoas;
@@ -47,8 +49,11 @@ function dezPorcento() {
     // sem o Number vai dar uma série de erros
     conta = Number(bill.value);
     pessoas = Number(person.value);
-    if (conta == false || pessoas == false) {
-        return;
+    if (conta === 0 || pessoas === 0) {
+        deuRuim.classList.add('one');
+        return; 
+    }else{
+        deuRuim.classList.remove('one');
     }
     // tip amount
     let result1 = conta * 0.1 / pessoas;
@@ -69,7 +74,10 @@ function quinzePorcento() {
     conta = Number(bill.value);
     pessoas = Number(person.value);
     if (conta == false || pessoas == false) {
+        deuRuim.classList.add('one');
         return;
+    }else{
+        deuRuim.classList.remove('one');
     }
     // tip amount
     let result1 = conta * 0.15 / pessoas;
@@ -91,7 +99,10 @@ function vinteCincoPorcento() {
     conta = Number(bill.value);
     pessoas = Number(person.value);
     if (conta == false || pessoas == false) {
+        deuRuim.classList.add('one');
         return;
+    }else{
+        deuRuim.classList.remove('one');
     }
     // tip amount
     let result1 = conta * 0.25 / pessoas;
@@ -111,7 +122,10 @@ function cinquentaPorcento() {
     conta = Number(bill.value);
     pessoas = Number(person.value);
     if (conta == false || pessoas == false) {
+        deuRuim.classList.add('one');
         return;
+    }else{
+        deuRuim.classList.remove('one');
     }
     // tip amount
     let result1 = conta * 0.5 / pessoas;
@@ -131,8 +145,11 @@ function custumerPorcent() {
     custumatizar = Number(custom.value) / 100;
     conta = Number(bill.value);
     pessoas = Number(person.value);
-    if (conta == false || pessoas == false || custumatizar == false) {
+    if (conta === 0 || pessoas === 0 || custumatizar === 0) {
+        deuRuim.classList.add('one');
         return;
+    }else{
+        deuRuim.classList.remove('one');
     }
     // tip amount
     let result1 = conta * custumatizar / pessoas;
