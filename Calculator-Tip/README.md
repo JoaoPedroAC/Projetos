@@ -9,6 +9,9 @@ Graças a esse a projeto pude por em práticas lógicas matemáticas e aprofunda
 - CSS;
 - Javascript.
 
+## Página
+* [Acesse a página por aqui!](https://joaopedroac.github.io/Projetos/Calculator-Tip/)
+
 # Screenshot
 ## Desktop
 ![desktop](https://user-images.githubusercontent.com/78094903/138007071-3bd05ec3-268b-4af2-99c4-453d1ddafede.jpeg)
